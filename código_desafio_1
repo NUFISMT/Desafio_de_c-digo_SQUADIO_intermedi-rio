@@ -1,0 +1,17 @@
+# Solicitar o valor do depósito ao cliente
+valor = float(input())
+
+# Inicializar o saldo atual (para o exemplo, vamos assumir que o saldo inicial é zero)
+saldo = 0.0
+
+if valor > 0:
+    # Adicionar o valor ao saldo
+    saldo += valor
+    # Imprimir a mensagem de sucesso em uma linha separada do saldo atual
+    print("Deposito realizado com sucesso!\nSaldo atual: R$ {:.2f}".format(saldo))
+elif valor < 0:
+    # Imprimir a mensagem de valor inválido
+    print("Valor invalido! Digite um valor maior que zero.")
+else:
+    # Imprimir a mensagem de encerrar o programa
+    print("Encerrando o programa...")
